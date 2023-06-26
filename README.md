@@ -1,4 +1,4 @@
-## Landing Tesla Witch Astro
+## Landing page with astro js
 ![](https://github.com/sergioriverafl/landing-tesla-astro/blob/dev/public/portada.png)
 
 ## 🧞 Commands
