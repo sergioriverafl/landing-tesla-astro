@@ -1,0 +1,47 @@
+---
+const { color, title, subtitle } = Astro.props;
+const textColor = `text-${color}`;
+---
+
+<section
+    class="landing-section bg-black h-screen w-screen text-center overflow-hidden relative"
+    data-header-color={color}
+>
+    <div class="z-30 relative h-full flex flex-col">
+        <header>
+            <h2 class={`${textColor} pt-40 text-[40px] font-medium`}>
+                {title}
+            </h2>
+
+            <p class={`${textColor} text-sm underline`}>
+                {subtitle}
+            </p>
+        </header>
+
+        <slot name="footer" />
+
+        <!--  <footer class="flex flex-col flex-grow justify-end pb-20">
+            <div class="flex flex-row gap-4 justify-center">
+                <a
+                    href=""
+                    class="rounded font-medium text-gray-600 text-sm bg-white backdrop-blur-sm px-12 py-2 inline-block transition-colors"
+                    >Explorar inventario</a
+                >
+
+                <a
+                    href=""
+                    class="rounded font-medium text-white text-sm bg-gray-600 backdrop-blur-sm px-12 py-2 inline-block transition-colors"
+                    >Pedido personalizado</a
+                >
+            </div>
+        </footer> -->
+    </div>
+    <div class="absolute top-0 bottom-0 h-full w-full z-10">
+        <slot name="background" />
+
+        <!-- <img
+            class="object-center object-cover h-full w-full"
+            src="/SolarPanels.avif"
+        /> -->
+    </div>
+</section>
