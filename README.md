@@ -1,6 +1,5 @@
-## Landing Tesla
-
-(https://github.com/sergioriverafl/landing-tesla-astro/blob/dev/public/portada.png)
+## Landing Tesla Witch Astro
+![](https://github.com/sergioriverafl/landing-tesla-astro/blob/dev/public/portada.png)
 
 ## 🧞 Commands
 
